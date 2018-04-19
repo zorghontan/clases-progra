@@ -1,0 +1,26 @@
+def notas():
+    print("Introduzca sus notas")
+    global nombre
+    global notas
+    global notas1
+    global notas2
+    nombre = input("Ingrese su numbre:")
+    notas = float(input("Nota 1 :"))
+    notas1 = float(input("Nota 2 :"))
+    notas2 = float(input("Nota 3 :"))
+    promedio()
+
+
+def promedio ():
+    suma = (notas + notas1 + notas2)/3
+    print(nombre,"tiene promedio ",suma)
+    print("Volver a calcular notas ?")
+    print("1. si")
+    print("2. no")
+    n1 = int(input(""))
+    if n1 == 1:
+        notas()
+    else:
+        print("Fin")
+
+notas()
