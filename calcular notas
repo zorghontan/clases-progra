@@ -27,7 +27,7 @@ def promedio ():
     n1 = int(input(""))
     if n1 == 1:
         notas()
-    else:
-        print("Fin")
+    elif n1 == 2:
+        print("cerrando")
 
 notas()
